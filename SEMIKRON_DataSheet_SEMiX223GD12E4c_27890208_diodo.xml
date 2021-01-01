@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="Diode" vendor="SEMIKRON" partnumber="SEMiX151GB12E4s">
+        <Variables/>
+        <SemiconductorData type="Diode">
+            <TurnOnLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0</CurrentAxis>
+                <VoltageAxis> 0</VoltageAxis>
+                <TemperatureAxis> 25</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 78.44 94.5 110.6 126.6 142.7 158.7 174.8 190.8 206.9 222.9 238.9 255 271 287.1 303.1 319.1 335.2 351.2 367.2 383.3 399.3 415.3 431.4 445.9</CurrentAxis>
+                <VoltageAxis> -600 0</VoltageAxis>
+                <TemperatureAxis> 150</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 0 9.273 10.36 11.49 12.32 13.19 14.09 14.89 15.71 16.48 17.17 17.82 18.42 18.96 19.43 20.02 20.39 20.83 21.15 21.36 21.63 21.9 22.1 22.3 22.52</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 1.48 6.64 10.79 18.64 28.89 41.65 57.66 74.61 96.22 118.1 137.1 158.4 176.9 197.3 214.6 234.6 252.8 284.4 311 336.7 359.7 395.5 415.3 439 461.1 481.1 498.8 522.8 545.7 568.4 589.7</CurrentAxis>
+                <TemperatureAxis> 25 150</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 0.7695 0.8986 1.028 1.157 1.286 1.415 1.544 1.649 1.779 1.89 1.986 2.072 2.148 2.234 2.295 2.373 2.428 2.541 2.629 2.712 2.782 2.898 2.962 3.036 3.105 3.163 3.222 3.298 3.369 3.439 3.501</Temperature>
+                    <Temperature> 0 0.4758 0.6049 0.7062 0.8274 0.9604 1.109 1.258 1.403 1.56 1.7 1.831 1.957 2.065 2.186 2.279 2.373 2.487 2.637 2.764 2.874 2.98 3.14 3.224 3.326 3.41 3.489 3.563 3.655 3.746 3.836 3.925</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Cauer">
+                <RCElement R="0.02709" C="0.01698"/>
+                <RCElement R="0.1271" C="0.1164"/>
+                <RCElement R="0.06692" C="0.09796"/>
+                <RCElement R="0.0001204" C="220.7"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

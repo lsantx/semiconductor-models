@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="IGBT" vendor="SEMIKRON" partnumber="SEMiX151GB12E4s">
+        <Variables/>
+        <SemiconductorData type="IGBT">
+            <TurnOnLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 26.21 30.65 34.27 38.71 42.74 47.58 52.82 57.66 61.29 66.33 70.36 74.19 77.42 81.05 84.68 87.9 91.94 96.37 101.2 105.2 109.3 114.9 120.2 124.6 129.2 133.5 137.9 142.3 147.8</CurrentAxis>
+                <VoltageAxis> 0 600</VoltageAxis>
+                <TemperatureAxis> 125</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 3.91 4.459 4.887 5.313 5.802 6.351 6.931 7.449 7.876 8.487 8.944 9.371 9.768 10.26 10.75 11.11 11.66 12.21 12.88 13.49 14.17 15.02 15.88 16.67 17.47 18.14 18.87 19.61 20.4</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 26.21 30.65 34.27 38.71 42.74 47.58 52.82 57.66 61.29 66.33 70.36 74.19 77.42 81.05 84.68 87.9 91.94 96.37 101.2 105.2 109.3 114.9 120.2 124.6 129.2 133.5 137.9 142.3 147.8</CurrentAxis>
+                <VoltageAxis> 0 600</VoltageAxis>
+                <TemperatureAxis> 125</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 4.217 4.889 5.439 6.142 6.722 7.363 8.004 8.645 9.103 9.683 10.14 10.6 11.03 11.42 11.82 12.28 12.7 13.28 13.86 14.35 14.84 15.54 16.15 16.61 17.04 17.46 17.95 18.53 19.17</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 0.9804 1.634 2.941 5.229 8.17 11.44 15.03 18.63 21.9 25.82 29.74 34.97 40.52 45.75 52.29 58.82 64.71 70.92 77.45 86.93 94.12 104.2 113.4 120.6 131.4 138.6 149</CurrentAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 0.5948 0.6896 0.767 0.8531 0.9045 0.956 1.02 1.072 1.123 1.17 1.23 1.29 1.359 1.419 1.487 1.555 1.624 1.692 1.752 1.855 1.932 2.034 2.128 2.197 2.316 2.385 2.487</Temperature>
+                    <Temperature> 0 0.4353 0.5172 0.6076 0.7237 0.8399 0.9215 1.003 1.072 1.166 1.235 1.308 1.394 1.492 1.574 1.69 1.797 1.891 1.99 2.101 2.234 2.363 2.508 2.645 2.761 2.92 3.044 3.22</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Cauer">
+                <RCElement R="0.04402" C="0.03279"/>
+                <RCElement R="0.08261" C="0.08778"/>
+                <RCElement R="0.1228" C="0.1036"/>
+                <RCElement R="0.1496" C="1.814"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>
