@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.0">
+    <Package class="Diode" vendor="ABB" partnumber="5SNA 0800N330100">
+        <SemiconductorData type="Diode">
+            <TurnOnLoss>
+                <CurrentAxis> 0</CurrentAxis>
+                <VoltageAxis> 0</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <CurrentAxis> 0 400 800 1200</CurrentAxis>
+                <VoltageAxis> -1800 0</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0.413 0.6201 0.7856</Voltage>
+                        <Voltage> 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0.828 1.18 1.342</Voltage>
+                        <Voltage> 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <CurrentAxis> 0 100 200 400 600 700 800 900 1000 1200 1400 1600</CurrentAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 1.34 1.54 1.84 2.14 2.24 2.3 2.44 2.51 2.66 2.81 2.95</Temperature>
+                    <Temperature> 0 1.05 1.34 1.75 2.1 2.1 2.35 2.48 2.6 2.81 3.04 3.24</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.0171" Tau="0.2036"/>
+                <RTauElement R="0.0043" Tau="0.0301"/>
+                <RTauElement R="0.00192" Tau="0.00753"/>
+                <RTauElement R="0.00192" Tau="0.00157"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

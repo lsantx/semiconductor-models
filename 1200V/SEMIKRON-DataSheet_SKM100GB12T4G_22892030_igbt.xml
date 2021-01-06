@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
-    <Package class="IGBT" vendor="SEMIKRON" partnumber="SKM200GB126D_22890631-1">
+    <Package class="IGBT" vendor="SEMIKRON" partnumber="SKM100GB12T4G">
         <Variables/>
         <SemiconductorData type="IGBT">
             <TurnOnLoss>

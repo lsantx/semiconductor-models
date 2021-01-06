@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="IGBT" vendor="ABB" partnumber="5SNA 0750G650300">
+        <Variables/>
+        <SemiconductorData type="IGBT">
+            <TurnOnLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 250 750 1500</CurrentAxis>
+                <VoltageAxis> 0 3600</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0 0 0</Voltage>
+                        <Voltage> 0 1.37 4.7 12.21</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0</Voltage>
+                        <Voltage> 0 2.233 6.401 17.55</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 250 750 1500</CurrentAxis>
+                <VoltageAxis> 0 3600</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0 0 0</Voltage>
+                        <Voltage> 0 1.583 4.2 8.752</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0</Voltage>
+                        <Voltage> 0 2.24 5.3 10.71</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 60 150 250 350 450 550 650 750 850 950 1050 1150 1250 1350 1500</CurrentAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 1.178 1.534 1.835 2.087 2.313 2.52 2.715 2.9 3.077 3.248 3.416 3.579 3.741 3.9 4.138</Temperature>
+                    <Temperature> 0 1.311 1.836 2.285 2.665 3.007 3.322 3.617 3.9 4.171 4.434 4.692 4.945 5.195 5.444 5.816</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.0085" Tau="0.151"/>
+                <RTauElement R="0.002" Tau="0.00584"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

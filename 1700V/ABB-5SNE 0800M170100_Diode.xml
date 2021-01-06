@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.0">
+    <Package class="Diode" vendor="ABB" partnumber="5SNE 0800M170100">
+        <SemiconductorData type="Diode">
+            <TurnOnLoss>
+                <CurrentAxis> 0 100 300 650 1000 1300</CurrentAxis>
+                <VoltageAxis> -3600 -3200 -2800 -2000 -1200 0</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <CurrentAxis> 0 200 400 600 700 800 900 1000 1200 1400 1600</CurrentAxis>
+                <VoltageAxis> -900 0</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0.05 0.09 0.12 0.14 0.15 0.16 0.18 0.2 0.21 0.22</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0.11 0.17 0.23 0.25 0.27 0.29 0.3 0.33 0.35 0.36</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <CurrentAxis> 0 200 400 600 700 800 900 1000 1200 1400 1600</CurrentAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 1.19 1.36 1.52 1.59 1.65 1.72 1.78 1.88 1.97 2.05</Temperature>
+                    <Temperature> 0 1.02 1.28 1.51 1.61 1.7 1.81 1.89 2.05 2.19 2.3</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.0253" Tau="0.21"/>
+                <RTauElement R="0.0058" Tau="0.0296"/>
+                <RTauElement R="0.0026" Tau="0.00701"/>
+                <RTauElement R="0.00252" Tau="0.00149"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

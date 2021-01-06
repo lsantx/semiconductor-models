@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.0">
+    <Package class="Diode" vendor="ABB" partnumber=" 5SNA 0800J450300">
+        <SemiconductorData type="Diode">
+            <TurnOnLoss>
+                <CurrentAxis> 0</CurrentAxis>
+                <VoltageAxis> 0</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <CurrentAxis> 0 200 400 800 1200 1600</CurrentAxis>
+                <VoltageAxis> -2800 0</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0.3848 0.6606 1.14 1.524 1.811</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0.7502 1.184 1.88 2.409 2.849</Voltage>
+                        <Voltage> 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <CurrentAxis> 0 50 100 200 400 600 800 900 1000 1100 1300 1600</CurrentAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 1.784 1.996 2.307 2.703 2.978 3.2 3.3 3.395 3.486 3.664 3.935</Temperature>
+                    <Temperature> 0 1.555 1.79 2.156 2.702 3.133 3.5 3.665 3.824 3.973 4.255 4.641</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.0187" Tau="0.192"/>
+                <RTauElement R="0.0066" Tau="0.0226"/>
+                <RTauElement R="0.00323" Tau="0.0031"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

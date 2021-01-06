@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="Diode" vendor="INFINEON" partnumber="FZ750R65KE3">
+        <Variables/>
+        <SemiconductorData type="Diode">
+            <TurnOnLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0</CurrentAxis>
+                <VoltageAxis> 0</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 76.12 138.8 250.7 376.1 506 653.7 823.9 1052 1415</CurrentAxis>
+                <VoltageAxis> -3600 0</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0 0 0.00373 0.4047 0.8056 1.21 1.59 2 2.41</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0.9561 1.193 1.604 2.005 2.406 2.807 3.197 3.608 4.009</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 38.46 251.7 500 751.7 1000 1248 1496</CurrentAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 1.102 2.041 2.564 2.999 3.358 3.688 3.988</Temperature>
+                    <Temperature> 0 0.8486 1.818 2.431 2.924 3.373 3.762 4.137</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster"/>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

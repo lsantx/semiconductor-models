@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="Diode" vendor="INFINEON" partnumber="FZ800R45KL3_B5">
+        <Variables/>
+        <SemiconductorData type="Diode">
+            <TurnOnLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0</CurrentAxis>
+                <VoltageAxis> 0</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 66.16 200.8 404 606.9 805.7 1004 1203 1405 1596</CurrentAxis>
+                <VoltageAxis> -2800 0</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0.56 1.1 1.7 2.1 2.4 2.65 2.8 2.9 3.05</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0.56 1.1 1.7 2.1 2.4 2.65 2.8 2.9 3.05</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 0.001 100 200 400 600 800 1000 1200 1400 1600</CurrentAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 1 1.4 1.7 2 2.25 2.5 2.7 2.85 3.05 3.2</Temperature>
+                    <Temperature> 0 0.7 1.3 1.45 1.8 2.2 2.45 2.7 2.9 3.2 3.35</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster"/>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

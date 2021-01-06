@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="IGBT" vendor="INFINEON" partnumber="FZ800R33KF2C">
+        <Variables/>
+        <SemiconductorData type="IGBT">
+            <TurnOnLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 70 200 400 600 800 1000 1200 1400 1600</CurrentAxis>
+                <VoltageAxis> 0 1800</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0.18 0.53 0.94 1.47 2.09 2.82 3.65</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0.24 0.42 0.7 1.05 1.46 1.99 2.61 3.34 4.17</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 70 200 400 600 800 1000 1200 1400 1600</CurrentAxis>
+                <VoltageAxis> 0 1800</VoltageAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0.11 0.22 0.42 0.65 0.89 1.12 1.35 1.55 1.71</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0.24 0.35 0.55 0.78 1.02 1.25 1.48 1.68 1.84</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 20 100 200 400 600 800 1000 1200 1400 1600</CurrentAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 0.99 1.68 2 2.55 3.01 3.38 3.75 4.15 4.52 4.86</Temperature>
+                    <Temperature> 0 0.99 1.81 2.31 3.07 3.71 4.27 4.85 5.41 5.95 6.54</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster"/>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>
