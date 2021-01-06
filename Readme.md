@@ -6,4 +6,4 @@ Each module present an IGBT and diode model.
 
 Manufactures: Semikron, Infineon, ABB.
 
-** If you want contribute with this repository you can insert through pull request or send to lsantx@gmail.com
+** If you want contribute to this repository you can insert through pull request or send the files to lsantx@gmail.com
