@@ -5,3 +5,5 @@ The models are organized by voltage class (600V, 1200V, 1700V, 3300V, 4500V and 
 Each module present an IGBT and diode model.
 
 Manufactures: Semikron, Infineon, ABB.
+
+** If you can contribute with this repository you can commit more files or send to lsantx@gmail.com
