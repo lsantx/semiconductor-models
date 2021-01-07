@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="Diode" vendor="Infineon" partnumber="FZ2400R12HP4">
+        <Variables/>
+        <SemiconductorData type="Diode">
+            <TurnOnLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 800 1600 2400 3200 4000 4800</CurrentAxis>
+                <VoltageAxis> -600 0</VoltageAxis>
+                <TemperatureAxis> 125 150</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 246.5 454.1 739.5 1181 1570 1985 2387 2763 3191 3594 3996 4385 4781</CurrentAxis>
+                <VoltageAxis> -600 0</VoltageAxis>
+                <TemperatureAxis> 125 150</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 55.37 74.34 99.62 130.6 153 171.7 186.2 197 208 216.6 225.4 234.9 243.1</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 66.43 89.19 116.7 152.4 177.1 197 211.8 222.6 233.3 243.1 252.6 262.4 271.9</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 30.47 35.95 82.43 174.9 328.7 554 830.5 1199 1496 1813 2120 2416 2723 3010 3337 3613 3941 4217 4452 4800</CurrentAxis>
+                <TemperatureAxis> 25 125 150</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0.6426 0.7279 0.8459 0.9639 1.082 1.207 1.325 1.456 1.554 1.639 1.725 1.803 1.875 1.948 2.02 2.085 2.157 2.216 2.262 2.341</Temperature>
+                    <Temperature> 0.4656 0.5311 0.6328 0.7574 0.8885 1.039 1.174 1.325 1.439 1.544 1.643 1.728 1.816 1.895 1.984 2.056 2.141 2.203 2.262 2.334</Temperature>
+                    <Temperature> 0.4492 0.4984 0.5803 0.7016 0.8393 0.9836 1.125 1.282 1.39 1.505 1.603 1.692 1.784 1.869 1.954 2.026 2.108 2.174 2.236 2.315</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.0015" Tau="0.0004"/>
+                <RTauElement R="0.002" Tau="0.0007"/>
+                <RTauElement R="0.015" Tau="0.0418"/>
+                <RTauElement R="0.0012" Tau="0.7107"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

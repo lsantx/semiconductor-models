@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="IGBT" vendor="Infineon" partnumber="FZ800R12KE3">
+        <Variables/>
+        <SemiconductorData type="IGBT">
+            <TurnOnLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 121.9 168.7 215.5 262.4 309.2 356 402.8 449.6 496.5 543.3 590.1 636.9 683.7 730.5 779.1 824.1 870.9 917.7 964.5 1010 1056 1102 1146 1185 1221 1257 1293 1328 1363 1400 1437 1466 1495 1529 1556 1585</CurrentAxis>
+                <VoltageAxis> 0 600</VoltageAxis>
+                <TemperatureAxis> 125</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 18.52 22.61 26.73 30.92 34.94 39.06 43.25 47.4 52.06 56.33 61.35 66.16 71.19 76.19 81.57 86.75 91.81 97.04 102.7 108.3 114.5 121 127.5 132.9 139 145.2 151.9 158.1 163.7 170.5 178.3 184.5 190.6 197.5 203.6 209.8</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 121.9 168.7 215.5 262.4 309.2 356 402.8 449.6 496.5 543.3 590.1 636.9 683.7 730.5 779.1 824.1 870.9 917.7 964.5 1010 1056 1102 1146 1185 1221 1257 1293 1328 1363 1400 1437 1466 1495 1529 1556 1585</CurrentAxis>
+                <VoltageAxis> 0 600</VoltageAxis>
+                <TemperatureAxis> 125</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 20.89 26.92 32.77 39.98 46.8 53.72 61.14 67.88 75.78 83.06 90.24 98.07 105.3 112.4 120.6 127.7 135.6 144.3 152.1 160.2 168.4 176.7 185.3 191.1 197.7 205.6 212.7 220.6 227.5 234.7 242.5 248.8 254.7 260.7 266.3 271.9</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 11.98 23.2 41.33 65.43 105.4 147.3 195 235.9 291.1 342.4 395.9 428 473 521.9 553 597.3 653.8 702.3 742.7 796 840.2 888.7 931 988.9 1027 1080 1114 1152 1197 1238 1282 1325 1356 1397 1455 1510 1553 1593</CurrentAxis>
+                <TemperatureAxis> 25 125</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0.5359 0.6538 0.7565 0.8545 0.9452 1.009 1.086 1.134 1.197 1.253 1.31 1.346 1.391 1.437 1.469 1.512 1.564 1.611 1.648 1.693 1.733 1.779 1.816 1.866 1.894 1.942 1.97 2.007 2.048 2.087 2.124 2.161 2.189 2.221 2.274 2.32 2.359 2.394</Temperature>
+                    <Temperature> 0.5359 0.5835 0.6496 0.7506 0.8933 1.009 1.086 1.168 1.261 1.348 1.426 1.481 1.544 1.617 1.659 1.717 1.799 1.858 1.92 1.992 2.045 2.112 2.17 2.245 2.298 2.372 2.413 2.469 2.528 2.582 2.637 2.69 2.733 2.787 2.869 2.953 3.007 3.069</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.00067" Tau="1.187e-05"/>
+                <RTauElement R="0.002" Tau="0.002364"/>
+                <RTauElement R="0.01763" Tau="0.02601"/>
+                <RTauElement R="0.0147" Tau="0.06499"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

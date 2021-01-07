@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="Diode" vendor="Infineon" partnumber="FF1500R17IP5P">
+        <Variables/>
+        <SemiconductorData type="Diode">
+            <TurnOnLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0</CurrentAxis>
+                <VoltageAxis> 0</VoltageAxis>
+                <TemperatureAxis> 25</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 153.1 205.7 258.4 323.2 396.1 469 558.1 647.3 736.4 817.5 898.6 987.8 1077 1166 1280 1385 1475 1564 1669 1791 1937 2067 2205 2351 2497 2611 2717 2838 2976</CurrentAxis>
+                <VoltageAxis> -900 0</VoltageAxis>
+                <TemperatureAxis> 125 175</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 87.37 101.3 113.9 127.8 144.2 160.6 178.3 197.2 213.6 227.5 241.4 255.9 269.8 283.1 298.2 312.1 322.2 332.3 343.7 356.3 370.2 381.6 392.9 405.6 416.9 424.5 433.3 442.2 452.3</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 137.9 151.8 168.8 187.8 206.7 226.9 249 269.8 290 308.3 323.5 341.8 358.2 374.6 392.9 409.3 423.2 435.2 449.7 464.3 480.1 492.7 507.2 519.8 532.4 540.7 549.5 558.3 568.4</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 6.349 22.22 34.92 66.67 117.5 187.3 250.8 333.3 428.6 542.9 673 796.8 917.5 1083 1203 1324 1463 1603 1737 1863 1984 2137 2276 2416 2543 2657 2797 2886 3000</CurrentAxis>
+                <TemperatureAxis> 25 125 175</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 0.7089 0.7674 0.8259 0.8844 0.9623 1.04 1.099 1.163 1.228 1.3 1.368 1.436 1.494 1.571 1.623 1.675 1.733 1.788 1.843 1.895 1.934 1.998 2.043 2.089 2.137 2.173 2.231 2.257 2.295</Temperature>
+                    <Temperature> 0 0.5073 0.5723 0.6373 0.6925 0.7802 0.8744 0.9327 1.02 1.092 1.176 1.263 1.335 1.403 1.493 1.555 1.607 1.678 1.743 1.811 1.869 1.904 1.972 2.034 2.089 2.137 2.173 2.231 2.257 2.295</Temperature>
+                    <Temperature> 0 0.4227 0.491 0.5365 0.6015 0.6989 0.8028 0.871 0.9488 1.036 1.127 1.218 1.299 1.367 1.471 1.542 1.607 1.678 1.743 1.817 1.869 1.927 1.998 2.063 2.124 2.179 2.225 2.283 2.322 2.37</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.0025" Tau="0.001"/>
+                <RTauElement R="0.0138" Tau="0.0254"/>
+                <RTauElement R="0.0225" Tau="0.118"/>
+                <RTauElement R="0.0097" Tau="0.862"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

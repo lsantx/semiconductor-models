@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="IGBT" vendor="Infineon" partnumber="FF1500R17IP5P">
+        <Variables/>
+        <SemiconductorData type="IGBT">
+            <TurnOnLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 169.8 242.6 323.5 404.3 509.4 614.6 752 913.7 1027 1156 1318 1423 1528 1658 1803 1941 2062 2167 2280 2377 2458 2535 2648 2725 2806 2887 2976</CurrentAxis>
+                <VoltageAxis> -900 0</VoltageAxis>
+                <TemperatureAxis> 125 175</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 89.57 112.3 131.2 150.1 182.3 210.6 248.5 297.7 331.7 377.2 430.2 464.2 502.1 555.1 615.8 676.4 729.5 786.3 850.8 900.1 949.4 998.7 1071 1128 1192 1249 1325</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 114.3 137 165.4 190 222.2 260 305.5 362.3 403.9 449.4 513.8 557.3 606.6 667.3 739.3 817 891 953.5 1035 1109 1174 1236 1339 1407 1491 1574 1673</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 169.8 242.6 323.5 404.3 509.4 614.6 752 913.7 1027 1156 1318 1423 1528 1658 1803 1941 2062 2167 2280 2377 2458 2535 2648 2725 2806 2887 2976</CurrentAxis>
+                <VoltageAxis> -900 0</VoltageAxis>
+                <TemperatureAxis> 125 175</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 80.07 98.98 127.4 146.3 178.5 206.8 246.6 295.8 324.1 358.2 403.6 431.9 466 501.9 547.4 589 628.7 659 700.7 732.9 765.1 791.6 837 869.2 899.5 933.6 973.4</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 104.8 129.4 155.9 184.3 218.4 250.5 296 347.1 384.9 424.7 477.7 515.5 547.7 595 646.2 693.5 737.1 782.5 826.1 867.8 900 934.1 985.2 1019 1061 1099 1144</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> 0 27.33 84.39 171.5 254.7 370.1 521.5 701.5 926.4 1153 1369 1589 1797 1964 2149 2321 2485 2662 2818 2978</CurrentAxis>
+                <TemperatureAxis> 25 125 175</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0 0.7485 0.8672 0.9731 1.046 1.138 1.24 1.351 1.47 1.583 1.688 1.783 1.877 1.955 2.039 2.119 2.185 2.26 2.326 2.402</Temperature>
+                    <Temperature> 0 0.5949 0.7616 0.9299 1.046 1.191 1.346 1.499 1.686 1.856 2.01 2.162 2.304 2.426 2.548 2.666 2.785 2.908 3.012 3.127</Temperature>
+                    <Temperature> 0 0.4797 0.728 0.9155 1.046 1.219 1.394 1.591 1.806 2.005 2.197 2.378 2.558 2.69 2.851 2.983 3.13 3.282 3.415 3.554</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.0013" Tau="0.0021"/>
+                <RTauElement R="0.0127" Tau="0.0416"/>
+                <RTauElement R="0.0117" Tau="0.255"/>
+                <RTauElement R="0.0034" Tau="1.82"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>
