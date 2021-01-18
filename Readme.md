@@ -1,3 +1,5 @@
+# Semiconductor thermal models 
+
 Semiconductor thermal models for PLECS software. These files are important to calculate power losses and junction temperature of the IGBT modules.
 
 The models are organized by voltage classes (600V, 1200V, 1700V, 3300V, 4500V and 6500V).
